@@ -204,7 +204,7 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" onclick="window.location.href='blogs.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Blog
                   </a>
                   <ul class="dropdown-menu px-4 py-3 rounded-4">
@@ -258,7 +258,7 @@
                 <a href="#" class="text-decoration-none past_page special_font_color">Features</a>
                 <i class="fa-solid fa-chevron-right px-2 current_page"></i>
                 <a href="" class="text-decoration-none current_page">Counters</a>
-            </p>
+            </p> 
           </div>
           <div class="col-lg-2 col-md-1 col-0"></div>
         </div>
@@ -270,8 +270,8 @@
         <div class="container py-5 px-2">
             <div class="row  w-100 justify-content-center">
                 <div class="col-11 py-4 px-3 text-center">
-                    <h1 class="py-2">Websites that tell your brand's story</h1>
-                    <p>We support companies that need agile teams of the best engineers.</br> Build or extend your software
+                    <h1 class="py-2" data-aos="fade-down">Websites that tell your brand's story</h1>
+                    <p data-aos="fade-up">We support companies that need agile teams of the best engineers.</br> Build or extend your software
                         development team with ease.</p>
 
                 </div>
@@ -297,8 +297,8 @@
                     </div>
                 </div>
                 <div class="col-lg-5 py-5 align-items-center">
-                    <h2 class="py-2">We’re design-focused across every touchpoint or interaction</h2>
-                    <p class="py-2">Everything we do and dream up has a solid design impact.We create human-centered
+                    <h1 class="py-2" data-aos="fade-down">We’re design-focused across every touchpoint or interaction</h1>
+                    <p class="py-2" data-aos="fade-up">Everything we do and dream up has a solid design impact.We create human-centered
                         enterprise software that has the polished, snappy feel of the best consumer apps.</p>
                     <div class="row  w-100 py-5 justify-content-between">
                         <div class="col-5">
@@ -336,8 +336,8 @@
         </div>
         <div class="col-md-5 col-12  d-flex align-items-center flex-column justify-content-center mt-md-0 mt-5">
           <div class="building_business_contents pe-lg-4 pe-md-3 pe-2">
-            <h2 class="fw-bolder building_business_content_heading">We’re building business for your digital economy</h2>
-            <p class="py-4">We are building business, banking products and services to support the next generation of entrepreneurs. 
+            <h1 class="fw-bolder building_business_content_heading" data-aos="fade-down">We’re building business for your digital economy</h1>
+            <p class="py-4" data-aos="fade-up">We are building business, banking products and services to support the next generation of entrepreneurs. 
               The world as we know it is no longer the same, and changes now occur in days and months, not years. Get started!</p>
 
               <div class="d-flex mb-5 building_business_count" >
@@ -417,8 +417,8 @@
         </div>
         <div class="col-md-5 col-12 d-flex justify-content-center align-items-center flex-column">
           <div class="">
-            <h3>Augment your brand, and heighten your business</h3>
-            <p class="py-4">Identify your authentic brand & shop elements through an in-depth exploration, 
+            <h1 data-aos="fade-up">Augment your brand, and heighten your business</h1>
+            <p class="py-4" data-aos="fade-down">Identify your authentic brand & shop elements through an in-depth exploration, 
               receive unique strategies to clarify your vision, strengthen differentiation, and prime your company for growth.</p>
               <a href="" class="px-5 py-3 text-decoration-none btn_bg btn">Get started</a>
           </div>
@@ -478,8 +478,13 @@
       </div>
 
     </footer>
+
     <!-- -----------------------Footer End------------------------  -->
-    
+    <!--------------------------- scroll arrow------------- -->
+  <div class="scroll_container">
+    <div class="scroll_rotate"></div>
+      <div class="scroll_arrow"><i class="fa-solid fa-arrow-up"></i></div>
+    </div>
     <!-- ------------ scrop bottom to top ------  -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
     <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -496,6 +501,34 @@
     <script>
       AOS.init();
     </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var scrollContainer = document.querySelector('.scroll_container');
+      var navbarSection = document.querySelector('.navbar_section');
+  
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > window.innerHeight / 2) {
+          scrollContainer.style.display = 'flex';
+        } else {
+          scrollContainer.style.display = 'none';
+        }
+  
+        if (window.scrollY > window.innerHeight) {
+          navbarSection.classList.add('fixed-top');
+          navbarSection.classList.add('bg-white')
+        } else {
+          navbarSection.classList.remove('fixed-top');
+        }
+      });
+  
+      scrollContainer.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script> 
 <script>
     // ---------------NavBar js -------------------- 
 

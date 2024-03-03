@@ -11,7 +11,12 @@ body{
     overflow-x: hidden;
 }
 
-
+.navbar_section{
+    position: sticky;
+    background-color: #fff;
+    top:0;
+    z-index: 1000;
+}
 /* ---------------------NAVBAR--------------- */
 .navbar-brand img{
     height: 41px;
@@ -22,7 +27,7 @@ body{
     /* background-image: url(../images/main/main-home-hero-min.png); */
     background-position: left;
     background-size: cover;
-    border-bottom-left-radius: 50px;
+   
 }
 .navbar_section .navbar .container-fluid .navbar-toggler{
     height: 40px;
@@ -162,13 +167,10 @@ li{
 
     /* -----------------INDEX CSS ------------------------ */
     #build_extend .build_extend_headtitle_content .build_extend_headtitle{
-        line-height: 50px;
-        font-size: 2rem;
         letter-spacing: -2px;
     }
     #employee .employee_headtitle_content .employee_headtitle{
         line-height: 50px;
-        font-size: 2rem;
     }
     /* -------------------------------------------------------- */
 }

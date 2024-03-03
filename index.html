@@ -57,7 +57,8 @@
     <!-- https://preview.codeless.co/converta/default/ -->
 
     <!-- ----------- Navbar and First Section  -------------- -->
-    <section class="navbar_section">
+
+    <section class="navbar_section mb-0">
 
         <!-- ------------------------Navbar ---------------------------- -->
           <nav class="navbar navbar-expand-lg container px-md-5 px-1 pt-md-3 pt-4 pb-0">
@@ -204,7 +205,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" onclick="window.location.href='blogs.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Blog
                       </a>
                       <ul class="dropdown-menu px-4 py-3 rounded-4">
@@ -237,13 +238,14 @@
             <div class="pe-5 pt-4 position-absolute top-0 end-0 ">
               <i class="fa-solid fa-xmark fs-4" onclick="search_box_close()" style="color: #404040;"></i>
             </div>
-        </div>
+        </div></section>
         <!-- ------------------------Navbar end---------------------------- -->
 
         <!-- ----------------------------First section-------------------- -->
-        <div id="first_section" class="container p-md-5 px-5 py-0  mt-md-5 mt-0 ">
+        <section class="navbar_section1 mt-0">
+        <div id="first_section" class="container p-md-5 px-5 py-0  pt-md-5 mt-0 ">
           <div class="row pb-5 pt-4 mb-5">
-            <div class="col-lg-8 col-12">
+            <div class="col-lg-8 col-12" data-aos="zoom-in-up">
               <h1 class="text-white d-md-block d-none hero_page_heading_font fw-bolder">Accelerate your new</h1>
               <h1 class="text-white d-md-block d-none hero_page_heading_font fw-bolder">Product <span class="special_font_color">strategy.</span></h1>
               <h1 class="text-white  text-center line_height  d-md-none d-block hero_page_heading_font">Accelerate your new Product  <span class="special_font_color">strategy.</span></h2>
@@ -263,7 +265,7 @@
     <!-- --------------End of Navbar and First Section----------------  -->
 
     <!-- -------------------Build or extend ------------------  -->
-    <section id="build_extend" class="py-md-5 py-3">
+    <section id="build_extend" class="py-md-5 py-3" data-aos="fade-down">
       <div class="container py-5">
         <div class="build_extend_headtitle_content text-center"> 
           <p class="m-0 p-0 build_extend_headtitle fw-bolder px-lg-0 px-md-3 px-5"><span class="pe-1">Build or extend your </span><span class="special_font_color" id="typewriter" data-array=""></span><span class="cursor ps-1"></span></p>
@@ -288,7 +290,7 @@
 
     <!-- --------------Bespoke software development solutions------------- -->
 
-    <section id="bespoke_software" class="py-md-5 py-3">
+    <section id="bespoke_software" class="py-md-5 py-3" data-aos="fade-up">
       <div class="container">
         <div class="d-flex justify-content-between flex-md-row flex-column px-lg-5 px-md-3 px-2">
           <div class="">
@@ -306,9 +308,9 @@
             <div class="p-4 shaow rounded-5 bespoke_software_inner_box">
               <div class="p-3">
               <div class=" p-4 rounded-circle border border-secondary d-inline-block">
-                <img src="./assets/images/main/7ceaf2ca-cc7e-4d97-af7b-90deb2df336a.svg" class="img-fluid" alt="">
+                <img src="./assets/images/main/7ceaf2ca-cc7e-4d97-af7b-90deb2df336a.svg"  class="img-fluid" alt="">
               </div>
-              <h4 class="py-2">Research and development</h4>
+              <h4 class="py-2">Product Design Sprint</h4>
               <p class="py-1  text-muted bespoke_software_inner_box_para">A workshop to answer critical questions, plan the features of your product and reduce the risk.</p>
               <a href="" class="text-decoration-none text-muted learn_more">Learn More</a>
             </div>
@@ -352,7 +354,7 @@
       </div>
       <div class="container px-lg-3 px-0">
 
-        <div class="container px-4 py-2 pb-4" >
+        <div class="container px-4 py-2 pb-4" data-aos="zoom-in">
           <!-- <h1 class="text-center py-5 mt-4">What our customers are saying</h1> -->
           <div class="owl-carousel py-3 px-3 pb-5" style="cursor: grab;">
               <div class="item mt-xl-0 mt-4 d-flex align-items-end">
@@ -396,9 +398,11 @@
 
     <!-- ------------------------------- plan and get started -----------------  -->
     <section class="right_plan mt-5 bg-white">
-      <div class="container px-lg-4 px-2 py-2">
-          <h1 class="py-3 text-center">Choose the right plan for you</h1>
-          <p class="text-center">Scale your software operations through a custom engineering team. Meet the demand of
+      <div class="container px-lg-4 px-2 py-2"  data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
+          <h1 class="py-3 text-center"  data-aos="fade-down">Choose the right plan for you</h1>
+          <p class="text-center"  data-aos="fade-up">Scale your software operations through a custom engineering team. Meet the demand of
               your company’s</p>
           <div class="container text-center d-flex align-items-center justify-content-center pt-4">
               <p class="pt-2 pe-3">Monthly</p>
@@ -480,10 +484,10 @@
   </section>
 
     <!-- ------------------------10+ years in the game ------------------  -->
-    <section id="employee"  class="py-md-5 py-3">
+    <section id="employee"  class="py-md-5 py-3" data-aos="zoom-in-right">
       <div class="container py-5">
         <div class="employee_headtitle_content text-center"> 
-          <p class="m-0 p-0 employee_headtitle fw-bolder"><span class="pe-1">10+ years in the game and we're </span> <br> <span class="pe-1">just getting </span> <span class="special_font_color" id="typewriter_2" data-array=""></span><span class="cursor ps-1"></span></p>
+          <h1 class="m-0 p-0 employee_headtitle fw-bolder"><span class="pe-1">10+ years in the game and we're </span> <br> <span class="pe-1">just getting </span> <span class="special_font_color" id="typewriter_2" data-array=""></span><span class="cursor ps-1"></span></h1>
           <p class="employee_para text-muted px-lg-5 px-md-2 px-2  mx-lg-5 mx-md-2 mx-0 pt-5"><span class="px-lg-5 px-md-2 px-0 d-inline-block mx-lg-5 mx-2"> Before we start, we would like to better understand your needs. We’ll review your 
             application  and schedule a free estimation call.</span></p>
             <a href="" class="text-decoration-none px-4 py-3 btn btn_bg mt-3 fw-bold">Get Started</a>
@@ -492,10 +496,10 @@
 
       <!-- ----------------- Customer saying------------------- -->
       <div class="customers mt-5">
-        <div class="container px-4 py-2 pb-4" >
+        <div class="container px-4 py-2 pb-4">
             <!-- <h1 class="text-center py-5 mt-4">What our customers are saying</h1> -->
             <div class="owl-carousel py-3 px-3 pb-5" style="cursor: grab;">
-                <div class="item mt-xl-0 mt-4">
+                <div class="item mt-xl-0 mt-4" data-aos="zoom-in">
                     <div class="container border p-4 rounded-5 bg-white">
                         <div class="row p-4">
                             <div class="col-sm-4 col-xs-8 d-flex  justify-content-center align-items-center">
@@ -519,7 +523,7 @@
                     </div>
 
                 </div>
-                <div class="item mt-xl-0 mt-4">
+                <div class="item mt-xl-0 mt-4" data-aos="zoom-in">
                     <div class="container border p-4 rounded-5 bg-white">
                         <div class="row p-4">
                             <div class="col-sm-4 col-xs-8 d-flex justify-content-center align-items-center">
@@ -542,7 +546,7 @@
                     </div>
 
                 </div>
-                <div class="item mt-xl-0 mt-4">
+                <div class="item mt-xl-0 mt-4" data-aos="zoom-in">
                     <div class="container border p-4 rounded-5 bg-white">
                         <div class="row py-4 px-4">
                             <div class="col-sm-4 col-xs-8 d-flex justify-content-center align-items-center">
@@ -566,7 +570,7 @@
                     </div>
 
                 </div>
-                <div class="item mt-xl-0 mt-4">
+                <div class="item mt-xl-0 mt-4" data-aos="zoom-in">
                     <div class="container border p-4 rounded-5 bg-white">
                         <div class="row p-4">
                             <div class="col-sm-4 col-xs-8 d-flex justify-content-center align-items-center">
@@ -647,7 +651,11 @@
 
     </footer>
     <!-- -----------------------Footer End------------------------  -->
-    
+      <!--------------------------- scroll arrow------------- -->
+  <div class="scroll_container">
+    <div class="scroll_rotate"></div>
+      <div class="scroll_arrow"><i class="fa-solid fa-arrow-up"></i></div>
+    </div>
     <!-- ------------ scrop bottom to top ------  -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
     <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -660,7 +668,40 @@
     <script src="assets/lightbox2-dev/dist/js/lightbox.js"></script>
     <!-- --------------- aos script ------------------- -->
     <script src="assets/aos/js/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var scrollContainer = document.querySelector('.scroll_container');
+        var navbarSection = document.querySelector('.navbar_section');
+    
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > window.innerHeight / 2) {
+            scrollContainer.style.display = 'flex';
+          } else {
+            scrollContainer.style.display = 'none';
+          }
+    
+          if (window.scrollY > window.innerHeight) {
+            navbarSection.classList.add('fixed-top');
+            navbarSection.classList.add('nav_radius');
+           
+          } else {
+            navbarSection.classList.remove('fixed-top'); 
+            navbarSection.classList.remove('nav_radius');
 
+          }
+        });
+    
+        scrollContainer.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
     <script>
 
 

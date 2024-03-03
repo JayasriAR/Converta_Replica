@@ -67,7 +67,7 @@
                           <a class="nav-link d-md-block d-none  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Home <i class="fa-solid fa-angle-right ms-2" style="transform: rotate(90deg);"></i>
                           </a>
-                          <a class="nav-link d-md-none d-block dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a class="nav-link d-md-none d-block dropdown-toggle p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Home 
                           </a>
                           <ul class="dropdown-menu px-4 py-3 rounded-4">
@@ -198,7 +198,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" onclick="window.location.href='blogs.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Blog
                       </a>
                       <ul class="dropdown-menu px-4 py-3 rounded-4">
@@ -241,7 +241,7 @@
         <div class="py-5 container text-center">
             <div class="row d-flex justify-content-center py-5">
                 <div class="col-12 d-flex flex-column align-items-center py-3 text-white">
-                    <h1 class="pb-4 py-3 w-lg-100 w-50">The 20 Smart Finance-Focused Resources For Small Businesses</h1>
+                    <h1 class="pb-4 py-3 w-lg-100 w-50"  data-aos="fade-down">The 20 Smart Finance-Focused Resources For Small Businesses</h1>
                     
                     <div class="row blog_contain justify-content-center">
                         <div class="col-md-6 col-12 d-flex flex-row justify-content-center">
@@ -274,7 +274,7 @@
                         <h4 class="py-1">CFO.University</h4>
                         <p class="py-2 pb-1">One of the most helpful blogs I have seen is Bench Blog, posted by Bench, a bookkeeping service for small businesses. In particular, they have great resources to help entrepreneurs understand Covid relief and what a lot of the new regulations will mean for them. Many of my clients like it, and we have sent many people to the site for this information and the other general business information the blog provides. – Patrick Rood, Rood Financial Services.</p>
 
-                        <img src="./assets/images/blogs/image_2.jpeg" class="img-fluid rounded-4 pt-3" alt="">
+                        <img src="./assets/images/blogs/image_2.jpeg" class="img-fluid rounded-4 pt-3"  data-aos="fade-down" alt="">
                         <p class="py-2 text-center">The company provides lending services to the UK consumer market.</p>
                         <h4 class="py-1">Harvard Business Review</h4>
                         <p class="py-2">Harvard Business Review is full of ideas and strategies. Even though most articles are for large businesses, the creativity and ideas can be leveraged by any small business or startup. I always leave Sunday open for reading and thinking with a good read of HBR. – JD Morris, SPE Funds Advisors LLC
@@ -296,7 +296,7 @@
                         <h4 class="py-1 mt-3">Online Communities</h4>
                         <p class="py-2">I have found subscribing to several sources, skimming the headlines and looking for information on the specific challenges I’m facing to be an effective strategy. If you encounter a problem, chances are that someone else has faced it too, and there is a thread relating to it somewhere. Don’t be afraid to use Google. I have found many useful ideas and solutions in communities and message boards.
                         </p>
-                        <div class="row form_s2">
+                        <div class="row form_s2"  data-aos="fade-down">
                             <div class="col-12">
                                 <h4 class="py-2">Leave a Reply</h4>
                                 <p class="pb-2">Your email address will not be published. Required fields are marked *</p>
@@ -482,6 +482,11 @@
   </div>
 
 </footer>
+<!--------------------------- scroll arrow------------- -->
+<div class="scroll_container">
+  <div class="scroll_rotate"></div>
+    <div class="scroll_arrow"><i class="fa-solid fa-arrow-up"></i></div>
+  </div>
     <!-- ------------ scrop bottom to top ------  -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
     <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -494,6 +499,34 @@
     <script src="assets/lightbox2-dev/dist/js/lightbox.js"></script>
     <!-- --------------- aos script ------------------- -->
     <script src="assets/aos/js/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var scrollContainer = document.querySelector('.scroll_container');
+        var navbarSection = document.querySelector('.navbar_section');
+    
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > window.innerHeight / 2) {
+            scrollContainer.style.display = 'flex';
+          } else {
+            scrollContainer.style.display = 'none';
+          }
+    
+          if (window.scrollY > window.innerHeight) {
+            navbarSection.classList.add('fixed-top');
+            navbarSection.classList.add('bg-white')
+          } else {
+            navbarSection.classList.remove('fixed-top');
+          }
+        });
+    
+        scrollContainer.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
     <script>
         AOS.init();
     </script>

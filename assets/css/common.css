@@ -1,21 +1,64 @@
+
+@font-face {
+    font-family: Robotto_Reguler;
+    src: url('../fonts/Roboto-Regular.ttf') format("opentype")
+}
+@font-face {
+    font-family: Robotto_Bold;
+    src: url('../fonts/Roboto-Bold.ttf') format("opentype")
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
 }
-
-body h1,
-h3 {
-    font-family: 'Luxurious Roman', cursive;
+h1,.employee_headtitle_2{
+    font-family: Robotto_Bold !important;
+    font-size: 40px !important;
+    font-weight: bolder !important;
+}
+p{
+    font-family: Robotto_Reguler;
+    font-size: 15px;   
+}
+.nav-link,li{
+    font-family: Robotto_Reguler;
+    font-size: 15px;   
+}
+.card,label{
+    font-family: Robotto_Reguler !important;
+}
+a{
+    font-family: Robotto_Reguler !important; 
+}
+.btn,button{
+    font-family: Robotto_Reguler !important; 
+    font-size: 14px; 
+}
+h2{
+    font-size: 28px;
+}
+span{
+    font-family: Robotto_Reguler !important;  
+}
+input::placeholder,textarea::placeholder {
+    font-family: Robotto_Reguler !important; 
+    font-size: 14px;
+  }
+body h1,h3,h2,h4,h5,h6 {
+    font-family: Robotto_Bold;
+    /* font-family: 'Luxurious Roman', cursive;
     font-family: 'Orelega One', cursive;
     font-family: 'Roboto Condensed', sans-serif;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One', cursive; */
+    
+}
+h5{
+    font-size: 20px;
 }
 body{
     -webkit-font-smoothing: antialiased;
     color: #7b88a8;
-    font-size: 18px;
-    font-family: DM Sans;
     overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6{
@@ -45,10 +88,7 @@ h1,h2,h3,h4,h5,h6{
     color: #fff !important;
     
 }
-.btn_bg:hover{
-    background: #321370;
-    border: 1px solid #321370;
-}
+
 
 .btn_bg_outline{
     border: 1px solid #4c6fff;
@@ -66,29 +106,88 @@ h1,h2,h3,h4,h5,h6{
     background-color: #f8fafc !important;
 }
 .about_s1 .main_page_heading{
-    font-size: 64px;
-    line-height: 72px;
+    /* line-height: 72px;
     text-transform: none;
-    letter-spacing: -2px;
+    letter-spacing: -2px; */
 }
-.about_s1 .current_page .past_page{
+/* .about_s1 .current_page .past_page{
     font-size: 18px;
-}
+} */
 .about_s1 .current_page{
     color: #7b88a8;
 }
 
-/* ----------------------------------------- */
+/* ------------------buttons----------------------- */
+.btn_bg,.btn{
+    transition: background-color 1s ease-in-out, border 1s linear !important;
+}
+.btn_bg:hover,.btn-primary:hover{
+    background-color: #364468 !important;
+    border: 1px solid 364468 !important;
+}
 
 
 
 
+/* scroll arrow */
+.scroll_container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+.scroll_container  .scroll_rotate{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px dashed #3a416f;
+    display: inline-block;
+    animation: rotateBorder 10s linear infinite;
+  }
+  @keyframes rotateBorder {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .scroll_container  .scroll_arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(330deg,#bf869b,#8b81ff);
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: 2s ease hover;
+    position: relative;
+    top: 0px;
+    right: 44.5px;
+  }
+  .scroll_container   .scroll_arrow:hover{
+    cursor: pointer;
+    background: linear-gradient(330deg,#c6809a,#867bfc);
+    color: #fff;
+  }
 
 
-
-
+  input[type=text],input[type=email]{
+    outline: none;
+    border: none;
+}
+input[type=checkbox]{
+    box-shadow: none !important;
+}
 /* -----------------------------font -family -------------------- */
-@font-face {
+/* @font-face {
     font-family: Montserrat-Bold;
     src: url('../fonts/Montserrat-Bold_0.ttf') format("opentype")
 }
@@ -126,7 +225,7 @@ h1,h2,h3,h4,h5,h6{
 @font-face {
     font-family: Amigos-7BL14;
     src: url('../fonts/Amigos-7BL14.ttf') format("opentype")
-}
+} */
 
 .form-control:focus {
     box-shadow: none;

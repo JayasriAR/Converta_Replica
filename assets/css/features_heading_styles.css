@@ -1,7 +1,6 @@
 #build_extend .build_extend_headtitle_content .build_extend_headtitle{
-    line-height: 70px;
     color: #2d3958;
-    letter-spacing: -2px;
+    font-family: Robotto_Bold !important;
 }
 .special_font_color{
     color: #4c6fff;

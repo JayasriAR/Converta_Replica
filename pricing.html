@@ -198,7 +198,7 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" onclick="window.location.href='blogs.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Blog
                   </a>
                   <ul class="dropdown-menu px-4 py-3 rounded-4">
@@ -250,10 +250,10 @@
     <!-- -------------------- Pricing built for Workspaces----------------------------- -->
     <section class="right_plan mt-5 bg-white">
         <div class="container px-4 py-2">
-            <h1 class="py-3 text-center">Pricing built for Workspaces</h1>
-            <p class="text-center">Scale your software operations through a custom engineering team. Meet the demand of
+            <h1 class="py-3 text-center"  data-aos="fade-up">Pricing built for Workspaces</h1>
+            <p class="text-center"  data-aos="fade-down">Scale your software operations through a custom engineering team. Meet the demand of
                 your company’s</p>
-            <div class="container text-center d-flex align-items-center justify-content-center pt-4">
+            <div class="container text-center d-flex align-items-center justify-content-center pt-4"  data-aos="fade-up">
                 <p class="pt-2 pe-3">Monthly</p>
                 <div class="box border rounded-5">
                     <div class="dot" onclick="monthly()" id="month"></div>
@@ -264,8 +264,7 @@
             </div>
             <div class="container pt-3 w-100">
                 <div class="row pt-5 d-flex justify-content-between">
-                    <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5"
-                        style="height: 28%;">
+                    <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5" style="height: 28%;" data-aos="fade-up">
                         <h4 class="pb-2">Personal</h4>
                         <h1 id="month_amt" style="display: none;">$14<small>.99</small><span
                                 class="fs-6 fw-lighter">/month</span></h1>
@@ -282,12 +281,11 @@
                             <a class="btn btn-primary py-3 px-4" style="width: auto;">Start 14-free day trial</a>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5 text-white"
-                        style="height: 28%; background-color: #12022f !important;">
-                        <h4 class="pb-2">Startup</h4>
-                        <h1 id="month_amt1" style="display: none;">$24<small>.99</small><span
+                    <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5 text-white" style="height: 28%; background-color: #12022f !important;" data-aos="fade-down">
+                        <h4 class="pb-2 text-white">Startup</h4>
+                        <h1 id="month_amt1" style="display: none;" class="text-white">$24<small>.99</small><span
                                 class="fs-6 fw-lighter">/month</span></h1>
-                        <h1 id="year_amt1">$20<small>.00</small><span class="fs-6 fw-lighter">/month</span></h1>
+                        <h1 id="year_amt1" class="text-white">$20<small>.00</small><span class="fs-6 fw-lighter">/month</span></h1>
                         <div class="mt-3 mb-2 border"></div>
                         <ul class="list-unstyled text-left pl-2 py-4">
                             <li><i class="fa-solid fa-check me-2 pt-1 plan_lgo"></i> Unlimited guest reviewers</li>
@@ -300,8 +298,7 @@
                             <a class="btn btn-primary py-3 px-4" style="width: auto;">Start 14-free day trial</a>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5"
-                        style="height: 28%;">
+                    <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5" style="height: 28%;" data-aos="fade-up">
                         <h4 class="pb-2">Business</h4>
                         <h1 id="month_amt2" style="display: none;">$49<small>.99</small><span
                                 class="fs-6 fw-lighter">/month</span></h1>
@@ -341,7 +338,7 @@
         </div>
         <div class="container pt-3 w-100">
             <div class="row pt-5 d-flex justify-content-between">
-                <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5" style="height: 28%;">
+                <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5" style="height: 28%;" data-aos="fade-up">
                     <h4 class="pb-2">Personal</h4>
                     <h1 id="month_amte" style="display: none;">$14<small>.99</small><span
                             class="fs-6 fw-lighter">/month</span></h1>
@@ -358,12 +355,11 @@
                         <a class="btn btn-primary py-3 px-4" style="width: auto;">Start 14-free day trial</a>
                     </div>
                 </div>
-                <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5 text-white"
-                    style="height: 28%;background-color: #12022f !important;">
-                    <h4 class="pb-2">Startup</h4>
-                    <h1 id="month_amte1" style="display: none;">$24<small>.99</small><span
+                <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5 text-white" style="height: 28%;background-color: #12022f !important;" data-aos="fade-up">
+                    <h4 class="pb-2 text-white">Startup</h4>
+                    <h1 id="month_amte1" style="display: none;" class="text-white">$24<small>.99</small><span
                             class="fs-6 fw-lighter">/month</span></h1>
-                    <h1 id="year_amte1">$20<small>.00</small><span class="fs-6 fw-lighter">/month</span></h1>
+                    <h1 id="year_amte1" class="text-white">$20<small>.00</small><span class="fs-6 fw-lighter">/month</span></h1>
                     <div class="mt-3 mb-2 border"></div>
                     <ul class="list-unstyled text-left pl-2 py-4">
                         <li><i class="fa-solid fa-check me-2 pt-1 plan_lgo"></i> Unlimited guest reviewers</li>
@@ -376,8 +372,7 @@
                         <a class="btn btn-primary py-3 px-4" style="width: auto;">Start 14-free day trial</a>
                     </div>
                 </div>
-                <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5"
-                    style="height: 28%;">
+                <div class="col-12 col-xl-3 col-md-12 col-lg-12 col-sm-12 bg-white p-5 text-sm-left mb-5 border rounded-4 pb-5"  style="height: 28%;" data-aos="fade-up">
                     <h4 class="pb-2">Business</h4>
                     <h1 id="month_amte2" style="display: none;">$49<small>.99</small><span
                             class="fs-6 fw-lighter">/month</span></h1>
@@ -404,11 +399,11 @@
         <div class="row d-flex flex-row justify-content-center py-5">
 
             <div class="col-md-8">
-                <h1 class="pb-4 py-2 text-center text-wrap">Custom Enterprise Plan
+                <h1 class="pb-4 py-2 text-center text-wrap" data-aos="fade-up">Custom Enterprise Plan
                 </h1>
             </div>
             <div class="col-md-12 d-flex flex-column justify-content-center">
-                <p class="text-center">We design new concepts, prototypes and processes for the next generation of
+                <p class="text-center" data-aos="fade-down">We design new concepts, prototypes and processes for the next generation of
                     services and
                     experiences, ready for the
                     market.</p>
@@ -451,8 +446,8 @@
             </div>
             <div class="col-md-5 d-flex flex-column justify-content-center align-items-center py-4">
                 <div class="">
-                    <h2>Strategies that get you on the path to success</h2>
-                    <p class="py-2">Through an in-depth knowledge of all industrial sectors and the application of
+                    <h2 data-aos="fade-up">Strategies that get you on the path to success</h2>
+                    <p class="py-2" data-aos="fade-down">Through an in-depth knowledge of all industrial sectors and the application of
                         approaches such as Lean Strategy, and
                         Business Design, we prepare organisations to welcome change, to be ready to evolve rapidly while
                         remaining competitive
@@ -467,11 +462,11 @@
 <!-- ---------- faq --------------- -->
 <section class="met_faq bg-white mt-5">
     <div class="container w-100 py-3 px-sm-5">
-        <h1 class="font-weight-light py-4">Frequently asked questions</h1>
+        <h1 class="font-weight-light py-4" data-aos="fade-up">Frequently asked questions</h1>
         <div class="row">
 
             <div class="col-12 col-xl-10 col-md-12 col-lg-12 col-sm-12 mt-xl-0 mt-">
-                <p>We hope this section will help you better understand the issues related to software</p>
+                <p data-aos="fade-down">We hope this section will help you better understand the issues related to software</p>
             </div>
             <div class="col-12 col-xl-2 col-md-12 col-lg-12 col-sm-12 mt-xl-0 mt-">
                 <button type="button" class="btn btn-primary py-3 px-4">Learn more</button>
@@ -712,7 +707,11 @@
     </div>
 
   </footer>
-
+<!--------------------------- scroll arrow------------- -->
+<div class="scroll_container">
+    <div class="scroll_rotate"></div>
+      <div class="scroll_arrow"><i class="fa-solid fa-arrow-up"></i></div>
+    </div>
     <!-- ------------ scrop bottom to top ------  -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
     <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -725,6 +724,34 @@
     <script src="assets/lightbox2-dev/dist/js/lightbox.js"></script>
     <!-- --------------- aos script ------------------- -->
     <script src="assets/aos/js/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var scrollContainer = document.querySelector('.scroll_container');
+          var navbarSection = document.querySelector('.navbar_section');
+      
+          window.addEventListener('scroll', function() {
+            if (window.scrollY > window.innerHeight / 2) {
+              scrollContainer.style.display = 'flex';
+            } else {
+              scrollContainer.style.display = 'none';
+            }
+      
+            if (window.scrollY > window.innerHeight) {
+              navbarSection.classList.add('fixed-top');
+              navbarSection.classList.add('bg-white')
+            } else {
+              navbarSection.classList.remove('fixed-top');
+            }
+          });
+      
+          scrollContainer.addEventListener('click', function() {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          });
+        });
+      </script>
     <script>
         AOS.init();
     </script>

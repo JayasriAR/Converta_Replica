@@ -198,7 +198,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" onclick="window.location.href='blogs.html'" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Blog
                       </a>
                       <ul class="dropdown-menu px-4 py-3 rounded-4">
@@ -239,7 +239,7 @@
     <section class="cart py-5 mt-5">
         <div class="container py-2 px-4 border rounded-4 cart_box">
             <div class="py-2">
-                <p class="pt-2"><i class="fa-regular fa-calendar pe-3 fs-5"></i> Your cart is currently empty.</p>
+                <p class="pt-2"  data-aos="fade-left"><i class="fa-regular fa-calendar pe-3 fs-5"></i> Your cart is currently empty.</p>
             </div>
 
 
@@ -303,7 +303,11 @@
       </div>
 
     </footer>
-
+<!--------------------------- scroll arrow------------- -->
+<div class="scroll_container">
+  <div class="scroll_rotate"></div>
+    <div class="scroll_arrow"><i class="fa-solid fa-arrow-up"></i></div>
+  </div>
 
     <!-- ------------ scrop bottom to top ------  -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
@@ -317,6 +321,34 @@
     <script src="assets/lightbox2-dev/dist/js/lightbox.js"></script>
     <!-- --------------- aos script ------------------- -->
     <script src="assets/aos/js/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var scrollContainer = document.querySelector('.scroll_container');
+        var navbarSection = document.querySelector('.navbar_section');
+    
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > window.innerHeight / 2) {
+            scrollContainer.style.display = 'flex';
+          } else {
+            scrollContainer.style.display = 'none';
+          }
+    
+          if (window.scrollY > window.innerHeight) {
+            navbarSection.classList.add('fixed-top');
+            navbarSection.classList.add('bg-white')
+          } else {
+            navbarSection.classList.remove('fixed-top');
+          }
+        });
+    
+        scrollContainer.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
     <script>
         AOS.init();
     </script>

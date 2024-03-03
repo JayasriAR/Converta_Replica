@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.active{
     margin:5px ;

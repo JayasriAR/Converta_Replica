@@ -198,9 +198,9 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Blog
-                      </a>
+                        <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom"  onclick="window.location.href = 'blogs.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                    </a>
                       <ul class="dropdown-menu px-4 py-3 rounded-4">
                         <li ><a class="dropdown-item p-2 pe-5" href="single_centered.html">Single Centered </a></li>
                         <li class="py-2"><a class="dropdown-item p-2 pe-5" href="single_gradient.html">Single with Gradient </a></li>
@@ -283,7 +283,7 @@
     <section class="header_features mt-5">
         <h1 class="text-center">Footer Features</h1>
         <div class="container w-100">
-            <div class="row mt-5 px-2 px-md-5 ">
+            <div class="row mt-5 px-2 px-md-5">
                 <div class="col-12 col-xl-4 col-md-12 col-lg-4 col-sm-12 mt-xl-0 mt-4">
                     <h5>1. Header Transparent Option</h5>
                     <p class="text-wrap">Especially useful for websites with beautiful background images or videos that
@@ -302,7 +302,7 @@
                         showcase.</p>
                 </div>
             </div>
-            <div class="row pt-xl-5 pt-0  px-2 px-md-5 ">
+            <div class="row pt-xl-5 pt-0  px-2 px-md-5 mb-lg-5">
                 <div class="col-12 col-xl-4 col-md-12 col-lg-4 col-sm-12 mt-xl-0 mt-4">
                     <h5>4. Custom header for each page</h5>
                     <p class="text-wrap">Especially useful for websites with beautiful background images or videos that
@@ -375,6 +375,11 @@
       </div>
 
     </footer>
+    <!--------------------------- scroll arrow------------- -->
+  <div class="scroll_container">
+    <div class="scroll_rotate"></div>
+      <div class="scroll_arrow"><i class="fa-solid fa-arrow-up"></i></div>
+    </div>
     <!-- ------------ scrop bottom to top ------  -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
     <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -387,6 +392,34 @@
     <script src="assets/lightbox2-dev/dist/js/lightbox.js"></script>
     <!-- --------------- aos script ------------------- -->
     <script src="assets/aos/js/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var scrollContainer = document.querySelector('.scroll_container');
+        var navbarSection = document.querySelector('.navbar_section');
+    
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > window.innerHeight / 2) {
+            scrollContainer.style.display = 'flex';
+          } else {
+            scrollContainer.style.display = 'none';
+          }
+    
+          if (window.scrollY > window.innerHeight) {
+            navbarSection.classList.add('fixed-top');
+            navbarSection.classList.add('bg-white')
+          } else {
+            navbarSection.classList.remove('fixed-top');
+          }
+        });
+    
+        scrollContainer.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
     <script>
         AOS.init();
     </script>

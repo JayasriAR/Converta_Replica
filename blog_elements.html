@@ -204,7 +204,7 @@
                   </li>
 
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" onclick="window.location.href='blogs.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Blog
                     </a>
                     <ul class="dropdown-menu px-4 py-3 rounded-4">
@@ -271,7 +271,7 @@
         <div class="container">
             <div class="row px-lg-5 px-md-4 px-2 mx-lg-2 mx-md-1">
                 <div class=" col-md-4 col-12  ">
-                    <div class="contents">
+                     <div data-aos="fade-up"  class="contents">
                         <img src="./assets/images/features/blog_elements/b4.jpeg" class="d-block w-100" alt="">
                         <div class="main_contents">
                             <div class="admin_part d-flex align-items-center">
@@ -293,7 +293,7 @@
                     </div>
                 </div>
                 <div class=" col-md-4 col-12  mt-md-0 mt-5">
-                    <div class="contents">
+                     <div data-aos="fade-up"  class="contents">
                         <img src="./assets/images/features/blog_elements/b3-1536x1024.jpeg" class="d-block w-100" alt="">
                         <div class="main_contents">
                             <div class="admin_part d-flex align-items-center">
@@ -315,7 +315,7 @@
                     </div>
                 </div>
                 <div class=" col-md-4 col-12  mt-md-0 mt-5">
-                    <div class="contents">
+                     <div data-aos="fade-up"  class="contents">
                         <img src="./assets/images/features/blog_elements/b2.jpeg" class="d-block w-100" alt="">
                         <div class="main_contents">
                             <div class="admin_part d-flex align-items-center">
@@ -344,7 +344,7 @@
         <div class="container">
             <div class="row px-lg-5 px-md-4 px-2 mx-lg-2 mx-md-1">
                 <div class=" col-md-4 col-12  ">
-                    <div class="contents">
+                     <div data-aos="fade-up"  class="contents">
                         
                         <div class="main_contents p-3">
                             <div class="admin_part d-flex align-items-center">
@@ -366,7 +366,7 @@
                     </div>
                 </div>
                 <div class=" col-md-4 col-12  mt-md-0 mt-5">
-                    <div class="contents">
+                     <div data-aos="fade-up"  class="contents">
                        
                         <div class="main_contents p-3">
                             <div class="admin_part d-flex align-items-center">
@@ -388,7 +388,7 @@
                     </div>
                 </div>
                 <div class=" col-md-4 col-12  mt-md-0 mt-5">
-                    <div class="contents">
+                     <div data-aos="fade-up" class="contents">
                        
                         <div class="main_contents p-3">
                             <div class="admin_part d-flex align-items-center">
@@ -419,7 +419,7 @@
         <div class="container">
             <div class="row px-lg-5 px-md-4 px-2 mx-lg-2 mx-md-1">
                 <div class=" col-md-4 col-12  ">
-                    <div class="contents">
+                     <div data-aos="fade-up"  class="contents">
                         <img src="./assets/images/features/blog_elements/b4.jpeg" class="d-block w-100" alt="">
                         <div class="main_contents">
                             <div class="admin_part d-flex align-items-center">
@@ -441,7 +441,7 @@
                     </div>
                 </div>
                 <div class=" col-md-4 col-12  mt-md-0 mt-5">
-                    <div class="contents">
+                     <div data-aos="fade-up"  class="contents">
                         <img src="./assets/images/features/blog_elements/b3-1536x1024.jpeg" class="d-block w-100" alt="">
                         <div class="main_contents">
                             <div class="admin_part d-flex align-items-center">
@@ -463,7 +463,7 @@
                     </div>
                 </div>
                 <div class=" col-md-4 col-12  mt-md-0 mt-5">
-                    <div class="contents">
+                     <div data-aos="fade-up"  class="contents">
                         <img src="./assets/images/features/blog_elements/b2.jpeg" class="d-block w-100" alt="">
                         <div class="main_contents">
                             <div class="admin_part d-flex align-items-center">
@@ -542,7 +542,11 @@
 
     </footer>
     <!-- -----------------------Footer End------------------------  -->
-    
+    <!--------------------------- scroll arrow------------- -->
+  <div class="scroll_container">
+    <div class="scroll_rotate"></div>
+      <div class="scroll_arrow"><i class="fa-solid fa-arrow-up"></i></div>
+    </div>
     <!-- ------------ scrop bottom to top ------  -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
     <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -555,6 +559,34 @@
     <script src="assets/lightbox2-dev/dist/js/lightbox.js"></script>
     <!-- --------------- aos script ------------------- -->
     <script src="assets/aos/js/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var scrollContainer = document.querySelector('.scroll_container');
+        var navbarSection = document.querySelector('.navbar_section');
+    
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > window.innerHeight / 2) {
+            scrollContainer.style.display = 'flex';
+          } else {
+            scrollContainer.style.display = 'none';
+          }
+    
+          if (window.scrollY > window.innerHeight) {
+            navbarSection.classList.add('fixed-top');
+            navbarSection.classList.add('bg-white')
+          } else {
+            navbarSection.classList.remove('fixed-top');
+          }
+        });
+    
+        scrollContainer.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
 <script>
     // ---------------NavBar js -------------------- 
 
@@ -719,7 +751,9 @@ setTimeout( function () {
 
 
 </script>
-
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

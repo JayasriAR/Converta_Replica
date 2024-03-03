@@ -198,9 +198,9 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Blog
-                      </a>
+                        <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom"  onclick="window.location.href = 'blogs.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                    </a>
                       <ul class="dropdown-menu px-4 py-3 rounded-4">
                         <li ><a class="dropdown-item p-2 pe-5" href="single_centered.html">Single Centered </a></li>
                         <li class="py-2"><a class="dropdown-item p-2 pe-5" href="single_gradient.html">Single with Gradient </a></li>
@@ -256,8 +256,8 @@
     <section id="build_extend" class="py-2">
         <div class="container py-1">
           <div class="build_extend_headtitle_content text-center"> 
-            <h1 class="m-0 p-0 build_extend_headtitle fw-bolder px-lg-0 px-md-3 px-5"><span class="pe-1">Build or extend your </span><span class="special_font_color" id="typewriter" data-array=""></span><span class="cursor ps-1"></span></br>
-            <span class="build_extend_headtitle fw-bolder">development team</span></h1>
+            <h1 class="m-0 p-0 build_extend_headtitle fw-bolder px-lg-0 px-md-3 px-5"><span class="pe-1" data-aos="fade-down">Build or extend your </span><span class="special_font_color" id="typewriter" data-array=""></span><span class="cursor ps-1"></span></br>
+            <span class="build_extend_headtitle fw-bolder" data-aos="fade-up">development team</span></h1>
   
           </div>
     </div>
@@ -267,12 +267,12 @@
         <div class="container py-5 px-2">
             <div class="row justify-content-center">
                 <div class="col-11 py-4 px-3">
-                    <h1 class="w-lg-100 w-75">Bespoke software development solutions</h1>
+                    <h1 class="w-lg-100 w-75" data-aos="fade-up">Bespoke software development solutions</h1>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-7 col-11 px-3">
-                    <p>We support companies that need agile teams of the best engineers.</br> Build or extend your software development team with ease.</p>
+                    <p data-aos="fade-down">We support companies that need agile teams of the best engineers.</br> Build or extend your software development team with ease.</p>
                 </div>
                 <div class="col-md-4 text-center py-2">
                     <a href="#" class="btn btn-primary py-3 px-4">Visit All</a>
@@ -284,15 +284,15 @@
 
 <section class="py-5 d-flex flex-column w-100">
         <div class="container text-center py-4">
-<h1 class="py-3">Choose a plan and get started</h1>
-<p class="py-2 px-5">Scale your software operations through a custom engineering team.</br> Meet the demand of your company’s</p>
+<h1 class="py-3" data-aos="fade-down">Choose a plan and get started</h1>
+<p class="py-2 px-5" data-aos="fade-up">Scale your software operations through a custom engineering team.</br> Meet the demand of your company’s</p>
         </div>
 </section>
 
 
 <section class="bg_theme">
 <div class="container py-5">
-    <h1 class="py-5 text-white text-center">A Design & Branding<br> Agency in <span class="gradient_text">New York</span>.</h1>
+    <h1 class="py-5 text-white text-center" data-aos="fade-down">A Design & Branding<br> Agency in <span class="gradient_text">New York</span>.</h1>
 </div>
 
 </section>
@@ -302,12 +302,12 @@
     <div class="container py-5 px-2">
         <div class="row justify-content-center">
             <div class="col-11 py-2 px-3">
-                <h6>BRINGING LOGIC TO DESIGN WITH A SPIRIT OF CURIOSITY AND EXCITEMENT</h6>
+                <h6 data-aos="fade-down">BRINGING LOGIC TO DESIGN WITH A SPIRIT OF CURIOSITY AND EXCITEMENT</h6>
             </div>
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-md-7 col-11 px-3">
-                <h1 class="w-lg-100 w-75">A team of creative designers & strategists</h1>
+                <h1 class="w-lg-100 w-75" data-aos="fade-down">A team of creative designers & strategists</h1>
             </div>
             <div class="col-md-4 text-center d-flex flex-column py-2 align-items-center">
                 <a href="#" class="btn btn-primary py-3 px-4">Learn More</a>
@@ -318,8 +318,8 @@
 
 <section class="py-5 bg_sec container d-flex flex-column justify-content-center align-items-center w-100 mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center py-5">
-<p class="py-3">HELPING ENTREPRENEURS MAKE MORE MONEY</p>
-<h1 class="py-2 px-5 w-lg-100 w-75 text-center">Unlimited cash back, zero fees, no credit check</h1>
+<p class="py-3" data-aos="fade-down">HELPING ENTREPRENEURS MAKE MORE MONEY</p>
+<h1 class="py-2 px-5 w-lg-100 w-75 text-center" data-aos="fade-up">Unlimited cash back, zero fees, no credit check</h1>
     </div>
 </section>
 
@@ -375,7 +375,11 @@
 
 </footer>
 
-
+<!--------------------------- scroll arrow------------- -->
+<div class="scroll_container">
+  <div class="scroll_rotate"></div>
+    <div class="scroll_arrow"><i class="fa-solid fa-arrow-up"></i></div>
+  </div>
 
 
 
@@ -395,6 +399,34 @@
     <script src="assets/aos/js/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var scrollContainer = document.querySelector('.scroll_container');
+        var navbarSection = document.querySelector('.navbar_section');
+    
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > window.innerHeight / 2) {
+            scrollContainer.style.display = 'flex';
+          } else {
+            scrollContainer.style.display = 'none';
+          }
+    
+          if (window.scrollY > window.innerHeight) {
+            navbarSection.classList.add('fixed-top');
+            navbarSection.classList.add('bg-white')
+          } else {
+            navbarSection.classList.remove('fixed-top');
+          }
+        });
+    
+        scrollContainer.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      });
     </script>
 <script>
     var typeWriterElement = document.getElementById('typewriter');

@@ -198,7 +198,7 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" onclick="window.location.href='blogs.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Blog
                   </a>
                   <ul class="dropdown-menu px-4 py-3 rounded-4">
@@ -298,8 +298,8 @@
     <!-- ----------------------software services ---------------------->
     <section class="soft_service bg-white pt-5">
         <div class="container w-100">
-            <h1 class="text-center py-2 pt-5">Open Roles</h1>
-            <p class="text-center py-1">Help us empower everyone to build for the web.</p>
+            <h1 class="text-center py-2 pt-5"  data-aos="fade-up">Open Roles</h1>
+            <p class="text-center py-1"  data-aos="fade-down">Help us empower everyone to build for the web.</p>
             <div class="row py-4 mt-5 px-2 px-md-5">
                 <div class="col-12 col-xl-4 col-md-12 col-lg-4 col-sm-12 mt-xl-0 mt-4" data-aos="fade-up"
                     data-aos-duration="1000">
@@ -373,7 +373,7 @@
     <!-- ------------------ service cutting edge tech----------------- -->
     <section class="about_s3 d-flex flex-column w-100 mt-5">
         <div class="container bg_sec_img py-5 mt-4">
-            <h1 class="pb-4 py-2 text-center text-wrap pt-4">Benefits & Wellness
+            <h1 class="pb-4 py-2 text-center text-wrap pt-4"  data-aos="fade-up">Benefits & Wellness
             </h1>
 
             <div class="accordion px-0 px-md-5" id="accordionExample">
@@ -563,11 +563,11 @@
 
             <div class="row justify-content-center py-5">
                 <div class="col-md-8">
-                    <h1 class="py-2 text-center">Are you ready to join our team?</h1>
+                    <h1 class="py-2 text-center"  data-aos="fade-up">Are you ready to join our team?</h1>
 
                 </div>
                 <div class="col-md-6">
-                    <p class="py-3 text-center fw-light">We’re always looking for talented individuals to help us
+                    <p class="py-3 text-center fw-light"  data-aos="fade-down">We’re always looking for talented individuals to help us
                         achieve our mission. Check out our current job openings and
                         apply today to take the first step towards.</p>
                 </div>
@@ -630,7 +630,11 @@
     </div>
 
   </footer>
-
+<!--------------------------- scroll arrow------------- -->
+<div class="scroll_container">
+  <div class="scroll_rotate"></div>
+    <div class="scroll_arrow"><i class="fa-solid fa-arrow-up"></i></div>
+  </div>
 
     <!-- ------------ scrop bottom to top ------  -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
@@ -644,6 +648,34 @@
     <script src="assets/lightbox2-dev/dist/js/lightbox.js"></script>
     <!-- --------------- aos script ------------------- -->
     <script src="assets/aos/js/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var scrollContainer = document.querySelector('.scroll_container');
+        var navbarSection = document.querySelector('.navbar_section');
+    
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > window.innerHeight / 2) {
+            scrollContainer.style.display = 'flex';
+          } else {
+            scrollContainer.style.display = 'none';
+          }
+    
+          if (window.scrollY > window.innerHeight) {
+            navbarSection.classList.add('fixed-top');
+            navbarSection.classList.add('bg-white')
+          } else {
+            navbarSection.classList.remove('fixed-top');
+          }
+        });
+    
+        scrollContainer.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
     <script>
         AOS.init();
     </script>

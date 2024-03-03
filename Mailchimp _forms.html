@@ -198,7 +198,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" onclick="window.location.href='blogs.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Blog
                       </a>
                       <ul class="dropdown-menu px-4 py-3 rounded-4">
@@ -255,9 +255,9 @@
             <div class="maiL_first">
                 <div class="row justify-content-center align-items-center pt-5 w-100">
                     <div class="col-md-7 pt-5">
-                        <h1 class="text-center text-wrap">Receive the latest technology & business news in your
+                        <h1 class="text-center text-wrap"  data-aos="fade-up">Receive the latest technology & business news in your
                             inbox</h1>
-                            <p class="py-4 text-wrap text-center">Get your team up to speed, without slowing down. Provide context around the clock, and keep everyone aligned
+                            <p class="py-4 text-wrap text-center"  data-aos="fade-down">Get your team up to speed, without slowing down. Provide context around the clock, and keep everyone aligned
                             asynchronously with comments, and tasks.</p>
                     </div>
                 </div>
@@ -278,9 +278,9 @@
             <div
                 class="col-lg-6 col-12 order-lg-1 order-2 d-flex align-items-center flex-column justify-content-center mt-md-0 mt-4">
                 <div class="px-lg-5 px-md-3 px-2 hero_section_get_started_contents position-relative">
-                    <h1 class="ready_to_start_headline pt-3 text-md-start text-center">Ready to get started with your
+                    <h1 class="ready_to_start_headline pt-3 text-md-start text-center"  data-aos="fade-up">Ready to get started with your
                         new project today?</h1>
-                    <p class="pt-4 pb-5 ready_to_start_para  text-md-start text-center">Identify your authentic brand &
+                    <p class="pt-4 pb-5 ready_to_start_para  text-md-start text-center"  data-aos="fade-down">Identify your authentic brand &
                         shop elements through an in-depth exploration, receive unique
                         strategies to clarify your vision, strengthen differentiation, and prime your company for
                         growth.</p>
@@ -324,14 +324,14 @@
         <div class="bg_lastsec">
             <div class="row justify-content-center align-items-center pt-5 w-100">
                 <div class="col-md-7 col-7 pt-5">
-                    <h1 class="text-center text-wrap text-white">Receive the latest technology & business news in your
+                    <h1 class="text-center text-wrap text-white"  data-aos="fade-down">Receive the latest technology & business news in your
                         inbox</h1>
                 </div>
             </div>
             <div class="row justify-content-center align-items-center pb-5 w-100">
                 <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-11 pt-5 pb-5 d-flex align-items-center">
-                    <input type="email" name="EMAIL" placeholder="Your email address" class="email" required="">
-                    <input type="submit" value="Sign up" class="signin btn btn-primary">
+                    <input type="email" name="EMAIL" placeholder="Your email address" class="email" required=""  data-aos="fade-up">
+                    <input type="submit" value="Sign up" class="signin btn btn-primary py-3 ms-0"  data-aos="fade-up">
                 </div>
             </div>
         </div>
@@ -390,7 +390,11 @@
   </div>
 
 </footer>
-
+<!--------------------------- scroll arrow------------- -->
+<div class="scroll_container">
+  <div class="scroll_rotate"></div>
+    <div class="scroll_arrow"><i class="fa-solid fa-arrow-up"></i></div>
+  </div>
     <!-- ------------ scrop bottom to top ------  -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
     <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -406,6 +410,34 @@
     <script>
         AOS.init();
     </script>
+       <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var scrollContainer = document.querySelector('.scroll_container');
+          var navbarSection = document.querySelector('.navbar_section');
+      
+          window.addEventListener('scroll', function() {
+            if (window.scrollY > window.innerHeight / 2) {
+              scrollContainer.style.display = 'flex';
+            } else {
+              scrollContainer.style.display = 'none';
+            }
+      
+            if (window.scrollY > window.innerHeight) {
+              navbarSection.classList.add('fixed-top');
+              navbarSection.classList.add('bg-white')
+            } else {
+              navbarSection.classList.remove('fixed-top');
+            }
+          });
+      
+          scrollContainer.addEventListener('click', function() {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          });
+        });
+      </script>
     <script>
         
  // ---------------NavBar js -------------------- 

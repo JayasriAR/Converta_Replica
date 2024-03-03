@@ -29,9 +29,15 @@ h1,h2,h3,h4,h5,h6{
   scrollbar-width: none;  /* Firefox */
 }
 /* ---------------Navbar --------------- */
-.navbar_section{
+.navbar_section1{
+    border-bottom-left-radius: 50px;
     background-image: url(../images/main/main-home-hero-min.png);
 }
+.navbar_section{
+    background-image: url(../images/main/nav_main.png);
+    border-bottom-left-radius: 0px;
+}
+
 .navbar_section .navbar .container-fluid .navbar-collapse .navbar-nav  .nav-item .dropdown_custom_menu{
    
     background: #fff;
@@ -42,9 +48,7 @@ h1,h2,h3,h4,h5,h6{
 }
 /* ----------First Section---------- */
 
-.hero_page_heading_font{
-    font-size: 4.5rem;
-}
+
 .special_font_color{
     color: #4c6fff;
 }
@@ -60,10 +64,9 @@ h1,h2,h3,h4,h5,h6{
     /* background-size: cover; */
 }
 #build_extend .build_extend_headtitle_content .build_extend_headtitle{
-    line-height: 70px;
+
     color: #2d3958;
-    font-size: 4rem;
-    letter-spacing: -2px;
+  
 }
 #build_extend .build_extend_line_height{
     line-height: 1.6rem;
@@ -83,14 +86,9 @@ h1,h2,h3,h4,h5,h6{
     box-shadow: rgba(0, 31, 158, 0.15) 0px 20px 40px 0px;
 }
 #bespoke_software .bespoke_software_boxes .bespoke_software_inner_box .bespoke_software_inner_box_para{
-    font-size: 18px;
-    font-weight: 400;
     color: #7b88a8c7;
 }
-#bespoke_software .bespoke_software_boxes .bespoke_software_inner_box .learn_more{
-    font-size: 19px;
-    font-weight: 500;
-}
+
 /* ------------------------------------ */
  
 /* -----------------software solutions--------------- */
@@ -147,14 +145,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #employee .employee_headtitle_content .employee_headtitle{
-    line-height: 70px;
+ 
     color: #2d3958;
-    font-size: 4rem;
-    letter-spacing: -2px;
+    
 }
-#employee .employee_headtitle_content .employee_para{
-    font-size: 18px;
-}
+
 .cursor {
 	border-left: 4px solid #4c6fff;
 }

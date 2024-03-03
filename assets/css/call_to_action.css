@@ -4,8 +4,6 @@
 body{
     -webkit-font-smoothing: antialiased;
     color: #7b88a8;
-    font-size: 18px;
-    font-family: DM Sans;
     overflow-x: hidden;
 }
 
@@ -28,13 +26,13 @@ body{
     background-repeat: no-repeat;
    
 }
-#hero_section_get_started .hero_section_get_started_contents .ready_to_start_headline{
+/* #hero_section_get_started .hero_section_get_started_contents .ready_to_start_headline{
     font-size: 2.3rem;
-}
-#hero_section_get_started .hero_section_get_started_contents .ready_to_start_para{
+} */
+/* #hero_section_get_started .hero_section_get_started_contents .ready_to_start_para{
     font-size: 23px;
     line-height: 25px;
-}
+} */
 #hero_section_get_started .hero_section_get_started_contents .hero_section_email_address{
     width: 360px;
     border-bottom-left-radius: 5px;
@@ -71,9 +69,6 @@ body{
 }
 .purecounter{
     color: #ffc0ec;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 49px;
     transition: opacity 0.5s ease-in-out; /* Add a fade-in effect */
   
 }
@@ -91,10 +86,10 @@ body{
 }
 
 #employee .employee_headtitle_content .employee_headtitle{
-    line-height: 70px;
+    /* line-height: 70px; */
     color: #2d3958;
-    font-size: 4rem;
-    letter-spacing: -2px;
+    /* font-size: 4rem;
+    letter-spacing: -2px; */
 }
 #employee .employee_headtitle_content .employee_para{
     font-size: 18px;
@@ -119,7 +114,7 @@ body{
     left: -22px;
 }
 #building_business .building_business_contents .number_count{
-    font-size: 3.8rem;
+    /* font-size: 3.8rem; */
     color: #6ac75a;
 }
 #building_business {
@@ -131,7 +126,7 @@ body{
     color: #321370;
 }
 #building_business .building_business_contents .building_business_content_heading{
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
 }
 #building_business .building_business_contents .building_business_count{
     gap: 60px;
@@ -144,10 +139,9 @@ body{
     background-repeat: no-repeat;
 }
 #employee .employee_headtitle_content .employee_headtitle_2{
-    line-height: 70px;
+
     color: #321370;
-    font-size: 3.3rem;
-    letter-spacing: -2px;
+  
 }
 /* --------------------------------------- */
 

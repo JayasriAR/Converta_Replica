@@ -30,13 +30,13 @@
 }
 
 
-.admin {
+/* .admin {
     
     font-size: 12px;
-}
+} */
 
 #solo_banner .container .row .main_contents  h4{
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: 700;
     line-height: 30px;
 }
@@ -55,10 +55,10 @@
 #solo_banner .container .row  .contents .main_contents .btn {
     border-radius: 50px;
 }
-
+/* 
 #solo_banner .contents .main_contents .main_contents_para{
     font-size: 21px;
-}
+} */
 
 
 
@@ -91,11 +91,11 @@
     background-color: rgb(255, 255, 255);
     margin-top: 10px;
 }
-#banner_noimg .contents .main_contents .main_contents_para{
+/* #banner_noimg .contents .main_contents .main_contents_para{
     font-size: 21px;
-}
+} */
 #banner_noimg .container .row .main_contents  h4{
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: 700;
     line-height: 30px;
 }

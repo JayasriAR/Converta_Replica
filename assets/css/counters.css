@@ -19,9 +19,9 @@
    /* border-radius: 15%; */
 
 }
-.startup_sec .bg_h1 h1{
+/* .startup_sec .bg_h1 h1{
   font-size: 45px;
-}
+} */
 
 
 .startup_sec .counter {
@@ -61,7 +61,7 @@
   left: -22px;
 }
 #building_business .building_business_contents .number_count{
-  font-size: 3.8rem;
+  /* font-size: 3.8rem; */
   color: #6ac75a;
 }
 #building_business {
@@ -72,17 +72,17 @@
 #building_business .building_business_contents span{
   color: #321370;
 }
-#building_business .building_business_contents .building_business_content_heading{
+/* #building_business .building_business_contents .building_business_content_heading{
   font-size: 2.5rem;
-}
+} */
 #building_business .building_business_contents .building_business_count{
   gap: 60px;
 }
 /* -------------------------------------------------------- */
 
-.ser_count h1{
+/* .ser_count h1{
   font-size: 4rem;
-}
+} */
 .ser_count .sc_count1{
   background-color: #e1fcdc !important;
   gap: 20px;

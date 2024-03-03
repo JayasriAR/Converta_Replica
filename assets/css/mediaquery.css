@@ -2,8 +2,20 @@
 @media only screen and (min-width: 1200px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 1150px) {
+     /* -------------------------------------------------------------- */
+
+     .hero_section_img_left_box {
+        top: 53%;
+        left: 0;
+        width: 100%;
+    }
     
+
+     #hero_section_get_started .hero_section_get_started_contents .hero_section_email_address {
+        width: 100%;
+       
+    }
 }
 
 /* ipad air  */

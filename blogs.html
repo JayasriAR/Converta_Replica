@@ -198,7 +198,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle  p-3 py-4 dropdown_custom" href="#" onclick="window.location.href='blogs.html'" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Blog
                       </a>
                       <ul class="dropdown-menu px-4 py-3 rounded-4">
@@ -257,7 +257,7 @@
                 <div class="col-lg-8 col-12  blog_contain">
                     <div class="container pb-5">
 
-                        <img src="./assets/images/blogs/image_1.jpeg" class="img-fluid">
+                        <img src="./assets/images/blogs/image_1.jpeg" class="img-fluid"  data-aos="fade-down">
                         <div class="row py-2">
                             <div class="col-12 py-2 d-flex flex-column justify-content-center">
                                 <div class="container px-2">
@@ -276,7 +276,7 @@
                                             class="fa-solid fa-circle mx-1 my-2"></i> 4&nbsp;March,2024 <i
                                             class="fa-solid fa-circle mx-1 my-2"></i> Business</p>
                                     </div>
-                                    <h1 class="py-2">
+                                    <h1 class="py-2" data-aos="fade-down">
                                         The 5 Ways To Improve Your Credibility Working From Home
                                     </h1>
                                     <div class="blue_line my-2"></div>
@@ -293,7 +293,7 @@
                     </div>
                     <div class="container pb-5 pt-5">
 
-                        <img src="./assets/images/blogs/image_5.jpeg" class="img-fluid">
+                        <img src="./assets/images/blogs/image_5.jpeg" class="img-fluid"  data-aos="fade-down">
                         <div class="row py-2">
                             <div class="col-12 py-2 d-flex flex-column justify-content-center">
                                 <div class="container px-2">
@@ -312,7 +312,7 @@
                                             class="fa-solid fa-circle mx-1 my-2"></i> 4&nbsp;March,2024 <i
                                             class="fa-solid fa-circle mx-1 my-2"></i> Business</p>
                                     </div>
-                                    <h1 class="py-2">
+                                    <h1 class="py-2" data-aos="fade-down">
                                         The 5 Ways To Improve Your Credibility Working From Home
                                     </h1>
                                     <div class="blue_line my-2"></div>
@@ -329,7 +329,7 @@
                     </div>
                     <div class="container pb-5 pt-5">
 
-                        <img src="./assets/images/blogs/image_7.jpeg" class="h-auto w-100">
+                        <img src="./assets/images/blogs/image_7.jpeg" class="h-auto w-100"  data-aos="fade-down">
                         <div class="row py-2">
                             <div class="col-12 py-2 d-flex flex-column justify-content-center">
                                 <div class="container px-2">
@@ -348,7 +348,7 @@
                                             class="fa-solid fa-circle mx-1 my-2"></i> Business</p>
                                     </div>
                                    
-                                    <h1 class="py-2">
+                                    <h1 class="py-2" data-aos="fade-down">
                                         The 5 Ways To Improve Your Credibility Working From Home
                                     </h1>
                                     <div class="blue_line my-2"></div>
@@ -378,13 +378,13 @@
                             <div class="mid_line my-5"></div>
                             <h4>Categories</h4>
                             <ul>
-                                <li class="py-2">Business</li>
-                                <li class="py-2">Development</li>
-                                <li class="py-2">Software</li>
+                                <li data-aos="fade-up" class="py-2">Business</li>
+                                <li data-aos="fade-up" class="py-2">Development</li>
+                                <li data-aos="fade-up" class="py-2">Software</li>
                             </ul>
                             <div class="mid_line my-5"></div>
                             <h4>Popular Post</h4>
-                            <div class="row justify-content-center align-items-center">
+                            <div class="row justify-content-center align-items-center"  data-aos="fade-down">
                                 <div class="col-3 d-flex flex-column align-items-center p-0">
                                     <img src="./assets/images/blogs/image_9.jpeg" class="rounded-3 img-fluid" alt="">
                                 </div>
@@ -392,7 +392,7 @@
                                     <p>The 5 Ways To Improve Your Credibility Working From Home</p>
                                 </div>
                             </div>
-                            <div class="row justify-content-center align-items-center">
+                            <div class="row justify-content-center align-items-center"  data-aos="fade-up">
                                 <div class="col-3 d-flex flex-column align-items-center p-0">
                                     <img src="./assets/images/blogs/image_10.jpeg" class="rounded-3 img-fluid" alt="">
                                 </div>
@@ -400,7 +400,7 @@
                                     <p>The 5 Ways To Improve Your Credibility Working From Home</p>
                                 </div>
                             </div>
-                            <div class="row justify-content-center align-items-center">
+                            <div class="row justify-content-center align-items-center"  data-aos="fade-down">
                                 <div class="col-3 d-flex flex-column align-items-center p-0">
                                     <img src="./assets/images/blogs/image_11.jpeg" class="rounded-3 img-fluid" alt="">
                                 </div>
@@ -493,7 +493,11 @@
       </div>
 
     </footer>
-
+<!--------------------------- scroll arrow------------- -->
+<div class="scroll_container">
+  <div class="scroll_rotate"></div>
+    <div class="scroll_arrow"><i class="fa-solid fa-arrow-up"></i></div>
+  </div>
 
     <!-- ------------ scrop bottom to top ------  -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
@@ -510,7 +514,34 @@
     <script>
         AOS.init();
     </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var scrollContainer = document.querySelector('.scroll_container');
+    var navbarSection = document.querySelector('.navbar_section');
 
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > window.innerHeight / 2) {
+        scrollContainer.style.display = 'flex';
+      } else {
+        scrollContainer.style.display = 'none';
+      }
+
+      if (window.scrollY > window.innerHeight) {
+        navbarSection.classList.add('fixed-top');
+        navbarSection.classList.add('bg-white')
+      } else {
+        navbarSection.classList.remove('fixed-top');
+      }
+    });
+
+    scrollContainer.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
     <script>
          // ---------------NavBar js -------------------- 
 
